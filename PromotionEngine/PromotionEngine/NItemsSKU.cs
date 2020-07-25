@@ -11,7 +11,13 @@ namespace PromotionEngine
     {
         public decimal CaliculatePromotionValue(List<char> SKUs)
         {
-            throw new NotImplementedException();
+            int skuAquantity = SKUs.FindAll(x => x == 'A').Count();
+            int skuBquantity = SKUs.FindAll(x => x == 'B').Count();
+
+            decimal skuAValue = (skuAquantity / 3) * 130 + (skuAquantity % 3) * 50;
+            decimal skuBValue = (skuBquantity / 2) * 45 + (skuAquantity % 2) * 30;
+
+            return skuAValue + skuBValue;
         }
     }
 }
