@@ -10,7 +10,7 @@ namespace PromotionEngine
 {
     public class PromotionTypeFactory
     {
-        static IPromotionType GetPromotion(int promotionType)
+        public static IPromotionType GetPromotion(int promotionType)
         {
             IPromotionType objPromotionType;
             switch (promotionType)
