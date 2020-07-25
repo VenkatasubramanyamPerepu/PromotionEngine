@@ -45,8 +45,11 @@
   <ItemGroup>
     <Compile Include="Helpers\Enums.cs" />
     <Compile Include="Interfaces\IPromotionType.cs" />
+    <Compile Include="NItemsSKU.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PromotionTypeFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SKU1andSKU2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
